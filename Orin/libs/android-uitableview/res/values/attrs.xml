@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <declare-styleable name="UIButton">
+	    <attr name="uititle" format="string" />
+	    <attr name="uisubtitle" format="string" />
+	    <attr name="uiimage" format="integer" />
+        <attr name="uistate" format="boolean" />
+  	</declare-styleable>
+  
+</resources>

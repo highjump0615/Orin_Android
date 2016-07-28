@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/user_image_frame"
+                android:layout_width="@dimen/menu_avatar_button_size"
+                android:layout_height="@dimen/menu_avatar_button_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/menu_avatar_button_margin_top"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/unknown_character"
+                    android:adjustViewBounds="true" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:indeterminate="true"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="@dimen/menu_name_text_width"
+                android:layout_height="@dimen/menu_name_text_height"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="name"
+                android:textSize="@dimen/menu_name_text_size"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/menu_name_text_margin_top"
+                android:textColor="@android:color/primary_text_dark" />
+
+            <Button
+                android:id="@+id/btn_charts"
+                android:layout_width="@dimen/menu_item_button_width"
+                android:layout_height="@dimen/menu_item_button_height"
+                android:layout_marginTop="@dimen/menu_chart_button_margin_top"
+                android:background="@drawable/menu_charts" />
+
+            <Button
+                android:id="@+id/btn_videos"
+                android:layout_width="@dimen/menu_item_button_width"
+                android:layout_height="@dimen/menu_item_button_height"
+                android:background="@drawable/menu_video" />
+
+            <Button
+                android:id="@+id/btn_badges"
+                android:layout_width="@dimen/menu_item_button_width"
+                android:layout_height="@dimen/menu_item_button_height"
+                android:background="@drawable/menu_badges" />
+
+            <Button
+                android:id="@+id/btn_friends"
+                android:layout_width="@dimen/menu_item_button_width"
+                android:layout_height="@dimen/menu_item_button_height"
+                android:background="@drawable/menu_friend" />
+
+            <Button
+                android:id="@+id/btn_settings"
+                android:layout_width="@dimen/menu_item_button_width"
+                android:layout_height="@dimen/menu_item_button_height"
+                android:background="@drawable/menu_settings" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

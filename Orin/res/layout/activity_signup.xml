@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/login_logo_size"
+            android:layout_height="@dimen/login_logo_size"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="@dimen/login_edit_text_width"
+            android:layout_height="@dimen/login_edit_text_height"
+            android:layout_marginTop="@dimen/login_edit_text_margin_top"
+            android:background="@drawable/esignup_email">
+
+            <EditText
+                android:id="@+id/edit_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:hint="E-mail address"
+                android:background="@null"
+                android:textSize="@dimen/login_edit_text_size"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="@dimen/login_edit_text_padding_start"
+                android:layout_marginRight="@dimen/login_edit_text_padding_end"
+                style="@style/myEditTextStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_username"
+            android:layout_width="@dimen/login_edit_text_width"
+            android:layout_height="@dimen/login_edit_text_height"
+            android:layout_marginTop="@dimen/login_edit_text_margin_top"
+            android:background="@drawable/login_username">
+
+            <EditText
+                android:id="@+id/text_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/login_edit_text_padding_start"
+                android:layout_marginRight="@dimen/login_edit_text_padding_end"
+                android:hint="Username"
+                android:textSize="@dimen/login_edit_text_size"
+                style="@style/myEditTextStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            android:layout_width="@dimen/login_edit_text_width"
+            android:layout_height="@dimen/login_edit_text_height"
+            android:layout_marginTop="@dimen/login_edit_text_margin_top"
+            android:background="@drawable/login_password">
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/login_edit_text_padding_start"
+                android:layout_marginRight="@dimen/login_edit_text_padding_end"
+                android:hint="Password"
+                android:textSize="@dimen/login_edit_text_size"
+                android:inputType="textPassword"
+                style="@style/myEditTextStyle" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            android:background="@drawable/esignup_signup_but" />
+
+        <Button
+            android:layout_width="@dimen/login_small_button_width"
+            android:layout_height="@dimen/login_small_button_height"
+            android:id="@+id/btn_to_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_small_button_margin_top"
+            android:background="@drawable/esignup_login_but" />
+
+    </LinearLayout>
+</RelativeLayout>

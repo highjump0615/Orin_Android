@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="#107FC9">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/comment_back_but" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo_small"
+            android:adjustViewBounds="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title_bar"
+        android:layout_above="@+id/edit_comment"
+        android:padding="@dimen/search_user_padding"
+        android:background="@null"
+        android:gravity="start"
+        android:inputType="textPersonName"
+        android:hint="Search for a user"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/search_user_search_text_size"
+        style="@style/myEditTextStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/edit_search"
+        android:layout_alignParentBottom="true">
+
+        <br.com.dina.ui.widget.UITableView
+            android:id="@+id/tableView_users"
+            style="@style/UITableView" />
+
+    </ScrollView>
+
+</RelativeLayout>

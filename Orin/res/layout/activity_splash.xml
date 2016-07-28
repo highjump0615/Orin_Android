@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen" >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/login_logo_size"
+        android:layout_height="@dimen/login_logo_size"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/chart_view_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chart_item_back"
+    android:layout_gravity="center_horizontal">
+
+    <!-- Day -->
+    <TextView
+        android:id="@+id/text_day"
+        android:layout_width="@dimen/chart_day_text_width"
+        android:layout_height="@dimen/chart_day_text_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/chart_view_margin"
+        android:textSize="@dimen/item_text_size"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center_vertical|right" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/chart_view_margin">
+
+        <!-- Mark and Title -->
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_mark"
+                android:layout_width="@dimen/chart_mark_image_size"
+                android:layout_height="@dimen/chart_mark_image_size"
+                android:adjustViewBounds="true"
+                android:src="@drawable/chart_mark" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/chart_view_margin"
+                android:text="Wizkid - I Love You Baby"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/item_text_size"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- Image and Play button -->
+        <RelativeLayout
+            android:id="@+id/chart_image_frame"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_photo_image_size"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginTop="@dimen/chart_view_margin"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@android:color/darker_gray" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:indeterminate="true"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="@dimen/chart_play_button_size"
+                android:layout_height="@dimen/chart_play_button_size"
+                android:layout_margin="@dimen/chart_view_margin"
+                android:background="@drawable/chart_play" />
+
+        </RelativeLayout>
+
+        <!-- Liked Users -->
+        <TextView
+            android:id="@+id/text_liked_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chart_image_frame"
+            android:layout_marginTop="@dimen/chart_view_margin"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/darker_gray"
+            android:lines="2"
+            android:textSize="@dimen/item_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/state_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chart_view_margin"
+            android:layout_below="@+id/text_liked_users"
+            android:gravity="center_vertical">
+
+            <!-- iTunes Download button -->
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="@dimen/chart_itunes_button_width"
+                android:layout_height="@dimen/chart_itunes_button_height"
+                android:background="@drawable/chart_download" />
+
+            <!-- Like button and value TextView -->
+            <LinearLayout
+                android:id="@+id/like_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/chart_like_layout_right_margin"
+                android:paddingLeft="@dimen/chart_like_layout_left_padding"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/comment_layout"
+                android:background="@drawable/chart_item_but_back" >
+                <Button
+                    android:id="@+id/btn_like"
+                    android:layout_marginTop="@dimen/chart_like_button_top_margin"
+                    android:layout_width="@dimen/chart_like_button_size"
+                    android:layout_height="@dimen/chart_like_button_size"
+                    android:background="@drawable/like_icon" />
+
+                <TextView
+                    android:id="@+id/text_like_count"
+                    android:layout_width="@dimen/chart_like_text_width"
+                    android:layout_height="@dimen/chart_like_text_height"
+                    android:layout_marginLeft="@dimen/chart_like_text_left_margin"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textSize="@dimen/item_text_size"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Comment button and value TextView -->
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/chart_like_layout_left_padding"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/chart_item_but_back" >
+            <Button
+                android:id="@+id/btn_comment"
+                android:layout_marginTop="@dimen/chart_comment_button_top_margin"
+                android:layout_width="@dimen/chart_comment_button_size"
+                android:layout_height="@dimen/chart_comment_button_size"
+                android:background="@drawable/comment_icon" />
+
+            <TextView
+                android:id="@+id/text_comment_count"
+                android:layout_width="@dimen/chart_comment_text_width"
+                android:layout_height="@dimen/chart_comment_text_height"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/chart_comment_text_left_margin"
+                android:textSize="@dimen/item_text_size"
+                android:textColor="@android:color/black"
+                android:text="0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/container" />
+
+</RelativeLayout>

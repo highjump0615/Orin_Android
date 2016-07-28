@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <br.com.dina.ui.widget.UIButton xmlns:ui="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_invite_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            ui:uititle="Invite friends" />
+
+        <br.com.dina.ui.widget.UITableView
+            android:id="@+id/tableView_friends"
+            style="@style/UITableView" />
+
+        <br.com.dina.ui.widget.UIButton xmlns:ui="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_search_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ui:uititle="Search names &amp; usernames"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

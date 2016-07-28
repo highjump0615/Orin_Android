@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orin.orin"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GCM specific permissions -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.orin.orin.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.orin.orin.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoTitleBarFullscreenTheme"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LandingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme" />
+
+        <activity android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme" />
+
+        <activity android:name=".SignUpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme" />
+
+        <activity android:name=".ForgetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme" />
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/NoTitleBarFullscreenTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked" />
+
+        <activity android:name=".CommentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        <activity android:name=".youtube.YouTubePlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".EditProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".InviteFriendsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".SearchUserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".OtherProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".DocViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name=".TourActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/NoTitleBarFullscreenTheme"/>
+
+        <activity android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+
+        <!-- GCM specific Broadcast Receiver -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.orin.orin" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <receiver android:name=".gcm.MessageHandlerReceiver">
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.orin.orin.DISPLAY_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

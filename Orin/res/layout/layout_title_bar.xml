@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="#107FC9">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_bar_text_size" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:text="Cancel"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_bar_button_text_size"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height= "match_parent"
+        android:paddingRight="10dp"
+        android:text="Done"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_bar_button_text_size" />
+
+</RelativeLayout>

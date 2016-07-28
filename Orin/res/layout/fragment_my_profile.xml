@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/profile_activity_photo_margin_left"
+        android:paddingRight="@dimen/profile_activity_photo_margin_left"
+        android:paddingTop="@dimen/profile_activity_photo_margin_top">
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="@dimen/profile_activity_photo_size"
+            android:layout_height="@dimen/profile_activity_photo_size"
+            android:scaleType="fitXY"
+            android:src="@drawable/unknown_character" />
+
+        <LinearLayout
+            android:id="@+id/layout_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_activity_text_view_height"
+            android:layout_marginLeft="@dimen/profile_activity_text_badges_margin_left"
+            android:layout_marginTop="@dimen/profile_activity_value_text_view_margin_top"
+            android:layout_toRightOf="@+id/img_photo">
+
+            <TextView
+                android:id="@+id/text_badges_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/profile_activity_value_text_size" />
+
+            <TextView
+                android:id="@+id/text_followers_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/profile_activity_value_text_size" />
+
+            <TextView
+                android:id="@+id/text_following_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/profile_activity_value_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_value_label"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_activity_text_view_height"
+            android:layout_alignLeft="@+id/layout_value"
+            android:layout_below="@+id/layout_value"
+            android:layout_toRightOf="@+id/img_photo">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="badges"
+                android:gravity="center"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="@dimen/profile_activity_label_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="followers"
+                android:gravity="center"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="@dimen/profile_activity_label_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="following"
+                android:gravity="center"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="@dimen/profile_activity_label_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layout_value"
+            android:layout_marginTop="@dimen/profile_activity_button_margin_top"
+            android:layout_toRightOf="@+id/img_photo"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_width="@dimen/profile_activity_button_width"
+                android:layout_height="@dimen/profile_activity_button_height"
+                android:text="Edit Your Profile"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/profile_activity_button_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_button"
+            android:layout_marginTop="@dimen/profile_activity_gap_height"
+            android:layout_marginBottom="@dimen/profile_activity_gap_height"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_activity_text_view_height"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/profile_activity_label_text_size" />
+
+            <TextView
+                android:id="@+id/text_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_activity_text_view_height"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/profile_activity_label_text_size" />
+
+            <TextView
+                android:id="@+id/text_website"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_activity_text_view_height"
+                android:gravity="center_vertical"
+                android:textColor="#324F85"
+                android:textSize="@dimen/profile_activity_label_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/profile_line"
+            android:background="#33000000"
+            android:layout_height="0.5dp"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/profile_activity_line_margin_top" />
+
+        <TextView
+            android:id="@+id/text_my_achievement"
+            android:layout_below="@+id/layout_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_activity_text_my_achievements_height"
+            android:gravity="center"
+            android:text="My Achievements"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/profile_activity_text_my_achievements_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_info"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/achievements_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </ScrollView>
+
+</RelativeLayout>

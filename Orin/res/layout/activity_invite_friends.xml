@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/change_pwd_edit_margin_left"
+        android:layout_marginRight="@dimen/change_pwd_edit_margin_left"
+        android:layout_marginTop="@dimen/change_pwd_label_cur_pwd_margin_top">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input your friend's email address"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/change_pwd_label_text_size"/>
+
+        <EditText
+            android:id="@+id/edit_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/change_pwd_edit_height"
+            android:layout_marginTop="@dimen/change_pwd_edit_margin_top"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/change_pwd_edit_text_size"
+            android:background="@drawable/edit_text_black_border_back"
+            style="@style/myEditTextStyle"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/invite_friends_button_height"
+            android:layout_marginTop="@dimen/change_pwd_edit_margin_top"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="right"
+            android:text="Send"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/invite_friends_button_text_size"
+            android:background="#107FC9"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFF4">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_profile_back_height"
+                android:scaleType="fitXY"
+                android:background="@drawable/editprofile" />
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="@dimen/edit_profile_photo_size"
+                android:layout_height="@dimen/edit_profile_photo_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/edit_profile_photo_margin_top"
+                android:layout_marginRight="@dimen/edit_profile_photo_margin_right"
+                android:background="@drawable/unknown_character"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/layout_full_name"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_full_name_margin_top" >
+                <ImageView
+                    android:id="@+id/img_full_name"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_fullname"
+                    android:scaleType="fitXY" />
+                <EditText
+                    android:id="@+id/edit_full_name"
+                    android:layout_width="@dimen/edit_profile_text_small_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:hint="Full Name"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_user_name"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_user_name_margin_top" >
+                <ImageView
+                    android:id="@+id/img_user_name"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_username"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/text_user_name"
+                    android:layout_width="@dimen/edit_profile_text_small_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:hint="User Name"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_web_site"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_web_site_margin_top" >
+                <ImageView
+                    android:id="@+id/img_web_site"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_website"
+                    android:scaleType="fitXY" />
+                <EditText
+                    android:id="@+id/edit_web_site"
+                    android:layout_width="@dimen/edit_profile_text_large_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:hint="Website"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_about_me"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_about_me_margin_top" >
+                <ImageView
+                    android:id="@+id/img_about_me"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_about"
+                    android:scaleType="fitXY" />
+                <EditText
+                    android:id="@+id/edit_about_me"
+                    android:layout_width="@dimen/edit_profile_text_large_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:gravity="center_vertical"
+                    android:hint="About me"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_change_password"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_change_password_margin_top" >
+                <ImageView
+                    android:id="@+id/img_change_password"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_chgpswd"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/text_change_password"
+                    android:layout_width="@dimen/edit_profile_text_small_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:text="Change Password"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_profile_button_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/edit_profile_button_margin_top"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@null" >
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/layout_email"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_email_margin_top" >
+                <ImageView
+                    android:id="@+id/img_email"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_email"
+                    android:scaleType="fitXY" />
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="@dimen/edit_profile_text_large_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:hint="Email"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_text_phone_margin_top" >
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_phone"
+                    android:scaleType="fitXY" />
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="@dimen/edit_profile_text_large_width"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:gravity="center_vertical"
+                    android:hint="Phone"
+                    android:textSize="@dimen/edit_profile_text_size"
+                    android:textColor="@android:color/black"
+                    android:background="@null"
+                    style="@style/myEditTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_gender"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_profile_text_margin_left"
+                android:layout_marginTop="@dimen/edit_profile_segmented_ctrl_top_margin" >
+                <ImageView
+                    android:id="@+id/img_gender"
+                    android:layout_width="@dimen/edit_profile_text_height"
+                    android:layout_height="@dimen/edit_profile_text_height"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editprofile_gender"
+                    android:scaleType="fitXY" />
+                <com.makeramen.segmented.SegmentedRadioGroup
+                    android:layout_width="@dimen/edit_profile_segmented_ctrl_width"
+                    android:layout_height="@dimen/edit_profile_segmented_ctrl_height"
+                    android:layout_marginLeft="@dimen/edit_profile_text_left"
+                    android:orientation="horizontal"
+                    android:id="@+id/segment_gender"
+                    android:checkedButton="@+id/btn_male">
+
+                    <RadioButton
+                        android:id="@+id/btn_male"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/btn_female"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/black" />
+
+                </com.makeramen.segmented.SegmentedRadioGroup>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

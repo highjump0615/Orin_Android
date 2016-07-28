@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="#107FC9" >
+
+        <Button
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"
+            android:id="@+id/btn_back"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/comment_back_but" />
+
+        <Button
+            android:layout_width="@dimen/comment_activity_comment_button_width"
+            android:layout_height="@dimen/title_bar_height"
+            android:id="@+id/btn_comment"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/comment_but" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_activity_comment_edit_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/comment_activity_comment_edit_text_size"
+        android:gravity="start"
+        android:inputType="textMultiLine|textCapSentences"
+        android:hint="Write a comment"
+        android:padding="@dimen/comment_activity_comment_edit_padding"
+        android:background="@drawable/edit_text_back"
+        android:textColor="@android:color/black"
+        style="@style/myEditTextStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Comment"
+        android:id="@+id/text_comment_status"
+        android:layout_below="@+id/layout_title_bar"
+        android:layout_above="@+id/edit_comment"
+        android:gravity="center"
+        android:textSize="@dimen/comment_activity_comment_status_text_size"
+        android:textColor="@android:color/secondary_text_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/layout_title_bar"
+        android:layout_above="@+id/edit_comment" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/comment_list" />
+
+    </ScrollView>
+
+</RelativeLayout>

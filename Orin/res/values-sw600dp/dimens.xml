@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu Activity -->
+    <dimen name="shadow_width">3dp</dimen>
+    <dimen name="sliding_menu_offset">550dp</dimen>
+
+    <!-- Main Title Bar -->
+    <dimen name="title_bar_height">40dp</dimen>
+    <dimen name="title_bar_margin">4dp</dimen>
+    <dimen name="title_bar_text_size">25sp</dimen>
+    <dimen name="title_bar_small_text_size">18sp</dimen>
+    <dimen name="title_bar_button_text_size">15sp</dimen>
+    <dimen name="title_bar_button_padding">10dp</dimen>
+
+    <!-- LandingActivity -->
+    <dimen name="landing_logo_size">148dp</dimen>
+    <dimen name="landing_logo_margin_right">180dp</dimen>
+    <dimen name="landing_logo_margin_top">265dp</dimen>
+
+    <dimen name="landing_button_area_width">640dp</dimen>
+    <dimen name="landing_button_width">258dp</dimen>
+    <dimen name="landing_button_height">35dp</dimen>
+    <dimen name="landing_button_margin_top">15dp</dimen>
+    <dimen name="landing_small_button_width">205dp</dimen>
+    <dimen name="landing_small_button_height">15dp</dimen>
+    <dimen name="landing_small_button_margin_top">20dp</dimen>
+    <dimen name="landing_small_button_margin_bottom">40dp</dimen>
+
+    <!-- LoginActivity & SignUpActivity -->
+    <dimen name="login_logo_size">148dp</dimen>
+
+    <dimen name="login_edit_text_width">182dp</dimen>
+    <dimen name="login_edit_text_height">30dp</dimen>
+    <dimen name="login_edit_text_margin_top">10dp</dimen>
+    <dimen name="login_edit_text_padding_start">8dp</dimen>
+    <dimen name="login_edit_text_padding_end">34dp</dimen>
+    <dimen name="login_edit_text_size">11sp</dimen>
+
+    <dimen name="login_button_width">182dp</dimen>
+    <dimen name="login_button_height">24dp</dimen>
+    <dimen name="login_button_margin_top">18dp</dimen>
+
+    <dimen name="login_small_button_width">167dp</dimen>
+    <dimen name="login_small_button_height">13dp</dimen>
+    <dimen name="login_small_button_margin_top">14dp</dimen>
+
+    <dimen name="signup_small_button_margin_bottom">40dp</dimen>
+    <dimen name="login_small_button_margin_bottom">60dp</dimen>
+    <dimen name="forget_small_button_margin_bottom">80dp</dimen>
+
+
+    <!-- Sliding Menu -->
+    <dimen name="menu_avatar_button_size">100dp</dimen>
+    <dimen name="menu_avatar_button_margin_top">40dp</dimen>
+
+    <dimen name="menu_name_text_width">180dp</dimen>
+    <dimen name="menu_name_text_height">30dp</dimen>
+    <dimen name="menu_name_text_margin_top">8dp</dimen>
+    <dimen name="menu_name_text_size">17sp</dimen>
+
+    <dimen name="menu_item_button_width">260dp</dimen>
+    <dimen name="menu_item_button_height">63dp</dimen>
+    <dimen name="menu_chart_button_margin_top">55dp</dimen>
+
+    <!-- ChartListItem -->
+    <dimen name="chart_view_margin">10dp</dimen>
+    <dimen name="chart_view_padding">12dp</dimen>
+
+    <dimen name="chart_view_width">250dp</dimen>
+    <dimen name="chart_view_height">450dp</dimen>
+    <dimen name="item_text_size">10sp</dimen>
+
+    <dimen name="chart_mark_image_size">42dp</dimen>
+
+    <dimen name="chart_day_text_width">84dp</dimen>
+    <dimen name="chart_day_text_height">19dp</dimen>
+
+    <dimen name="chart_photo_image_size">230dp</dimen>
+    <dimen name="chart_play_button_size">35dp</dimen>
+
+    <dimen name="chart_like_list_text_height">38dp</dimen>
+    <dimen name="chart_like_list_text_margin_left">10dp</dimen>
+    <dimen name="chart_like_list_text_margin_top">360dp</dimen>
+
+    <dimen name="chart_itunes_button_width">82dp</dimen>
+    <dimen name="chart_itunes_button_height">30dp</dimen>
+    <dimen name="chart_itunes_button_margin_left">12dp</dimen>
+    <dimen name="chart_itunes_button_margin_bottom">10dp</dimen>
+
+    <!-- VideoListItem -->
+    <dimen name="video_item_width">292dp</dimen>
+    <dimen name="video_item_height">88dp</dimen>
+
+    <dimen name="video_button_width">68dp</dimen>
+    <dimen name="video_button_height">65dp</dimen>
+    <dimen name="video_button_margin_left">7dp</dimen>
+
+    <dimen name="video_item_text_width">206dp</dimen>
+    <dimen name="video_item_text_height">24dp</dimen>
+    <dimen name="video_item_text_margin_left">5dp</dimen>
+    <dimen name="video_title_text_margin_top">8dp</dimen>
+    <dimen name="video_day_text_margin_top">29dp</dimen>
+
+    <dimen name="video_like_button_width">20dp</dimen>
+    <dimen name="video_like_button_height">19dp</dimen>
+    <dimen name="video_like_button_margin_left">172dp</dimen>
+    <dimen name="video_like_button_margin_top">57dp</dimen>
+
+    <dimen name="video_like_text_width">32dp</dimen>
+    <dimen name="video_like_text_height">20dp</dimen>
+    <dimen name="video_like_text_margin_left">5dp</dimen>
+    <dimen name="video_like_text_margin_top">56dp</dimen>
+
+    <dimen name="video_comment_button_width">25dp</dimen>
+    <dimen name="video_comment_button_height">23dp</dimen>
+    <dimen name="video_comment_button_margin_left">233dp</dimen>
+    <dimen name="video_comment_button_margin_top">55dp</dimen>
+
+    <dimen name="video_comment_text_width">32dp</dimen>
+    <dimen name="video_comment_text_height">20dp</dimen>
+    <dimen name="video_comment_text_margin_left">5dp</dimen>
+    <dimen name="video_comment_text_margin_top">56dp</dimen>
+    <dimen name="video_item_small_text_size">12sp</dimen>
+
+    <!-- CommentListItem -->
+    <dimen name="comment_item_height">74dp</dimen>
+    <dimen name="comment_item_padding">12dp</dimen>
+
+    <dimen name="comment_item_image_size">50dp</dimen>
+
+    <dimen name="comment_item_text_name_width">110dp</dimen>
+    <dimen name="comment_item_text_name_height">30dp</dimen>
+    <dimen name="comment_item_text_name_margin_left">60dp</dimen>
+    <dimen name="comment_item_text_name_margin_top">8dp</dimen>
+    <dimen name="comment_item_text_name_text_size">16sp</dimen>
+
+    <dimen name="comment_item_text_comment_width">230dp</dimen>
+    <dimen name="comment_item_text_comment_height">24dp</dimen>
+    <dimen name="comment_item_text_comment_margin_top">40dp</dimen>
+    <dimen name="comment_item_text_comment_text_size">12sp</dimen>
+
+    <dimen name="comment_item_text_comment_time_width">82dp</dimen>
+    <dimen name="comment_item_text_comment_time_height">21dp</dimen>
+    <dimen name="comment_item_text_comment_time_text_size">14sp</dimen>
+
+    <!-- CommentActivity -->
+    <dimen name="comment_activity_comment_button_width">75dp</dimen>
+
+    <dimen name="comment_activity_comment_edit_height">67dp</dimen>
+    <dimen name="comment_activity_comment_edit_padding">4dp</dimen>
+    <dimen name="comment_activity_comment_edit_text_size">14sp</dimen>
+
+    <dimen name="comment_activity_comment_status_text_size">30sp</dimen>
+
+    <!-- MyProfileActivity -->
+    <dimen name="profile_activity_photo_size">80dp</dimen>
+    <dimen name="profile_activity_photo_margin_left">20dp</dimen>
+    <dimen name="profile_activity_photo_margin_top">30dp</dimen>
+
+    <dimen name="profile_activity_text_view_height">21dp</dimen>
+    <dimen name="profile_activity_value_text_size">17sp</dimen>
+    <dimen name="profile_activity_label_text_size">12sp</dimen>
+
+    <dimen name="profile_activity_text_badges_margin_left">20dp</dimen>
+
+    <dimen name="profile_activity_button_width">148dp</dimen>
+    <dimen name="profile_activity_button_height">33dp</dimen>
+    <dimen name="profile_activity_button_margin_right">20dp</dimen>
+    <dimen name="profile_activity_button_margin_top">70dp</dimen>
+    <dimen name="profile_activity_button_text_size">17sp</dimen>
+
+    <dimen name="profile_activity_gap_height">6dp</dimen>
+
+    <dimen name="profile_activity_image_badge_size">80dp</dimen>
+    <dimen name="profile_activity_text_badge_height">20dp</dimen>
+    <dimen name="profile_activity_text_badge_text_size">14sp</dimen>
+
+    <dimen name="profile_activity_badge_layout_vertical_gap_size">25dp</dimen>
+    <dimen name="profile_activity_badge_layout_horizontal_gap_size">20dp</dimen>
+
+</resources>
+
+

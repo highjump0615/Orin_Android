@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signup_background" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/landing_button_area_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/landing_logo_size"
+            android:layout_height="@dimen/landing_logo_size"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="@dimen/landing_button_width"
+            android:layout_height="@dimen/landing_button_height"
+            android:id="@+id/btn_facebook_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/landing_button_margin_top"
+            android:background="@drawable/signup_facebook_but" />
+
+        <Button
+            android:layout_width="@dimen/landing_button_width"
+            android:layout_height="@dimen/landing_button_height"
+            android:id="@+id/btn_twitter_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/landing_button_margin_top"
+            android:background="@drawable/signup_twitter_but" />
+
+        <Button
+            android:layout_width="@dimen/landing_button_width"
+            android:layout_height="@dimen/landing_button_height"
+            android:id="@+id/btn_email_register"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/landing_button_margin_top"
+            android:background="@drawable/signup_email_but" />
+
+        <Button
+            android:layout_width="@dimen/landing_small_button_width"
+            android:layout_height="@dimen/landing_small_button_height"
+            android:id="@+id/btn_login_here"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signup_login_but"
+            android:layout_marginTop="@dimen/landing_small_button_margin_top"
+            android:layout_marginBottom="@dimen/landing_small_button_margin_bottom" />
+
+    </LinearLayout>
+
+</RelativeLayout>
